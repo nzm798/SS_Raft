@@ -5,7 +5,11 @@
   <groupId>com.ss</groupId>
   <artifactId>SS_Saft</artifactId>
   <version>1.0-SS_Saft</version>
-  <packaging>jar</packaging>
+  <modules>
+    <module>common</module>
+    <module>server</module>
+  </modules>
+  <packaging>pom</packaging>
 
   <name>SS_Saft</name>
   <url>http://maven.apache.org</url>
@@ -30,6 +34,16 @@
       <groupId>org.rocksdb</groupId>
       <artifactId>rocksdbjni</artifactId>
       <version>5.14.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.30</version>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.26</version>
     </dependency>
   </dependencies>
 </project>
